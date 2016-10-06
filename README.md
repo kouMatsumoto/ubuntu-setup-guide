@@ -2,6 +2,15 @@
 My setup guide for Ubuntu to web development using Node.js
 
 
+# System Settings
+- Install fonts
+
+
+### Install fonts
+Install "Consolas" font Microsoft made for programming.  
+See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
+
+
 # Install Core Apps
 0. apt-get update
 0. git
