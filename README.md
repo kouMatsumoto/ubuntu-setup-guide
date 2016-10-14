@@ -10,6 +10,10 @@ My setup guide for Ubuntu to web development using Node.js
 Install "Consolas" font Microsoft made for programming.  
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 
+### Enable Japanese to input methods
+Use fcitx and Mozc
+See [https://hirooka.pro/?p=8373](https://hirooka.pro/?p=8373)
+
 
 # Install Core Apps
 0. apt-get update
