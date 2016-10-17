@@ -40,6 +40,10 @@ git config --global user.name "my name"
 git config --global user.email myemail@example.com
 ```
 
+### Git flow
+See 
+https://github.com/petervanderdoes/gitflow-avh/wiki/Installing-on-Linux,-Unix,-etc.
+
 
 ### Node.js
 Install through NVM (Node Version Manager)  
