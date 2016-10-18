@@ -70,3 +70,9 @@ nvm install node
 
 ### npm packages as global
 0. node-gyp
+
+
+
+
+#### slack
+Install Slack Application for Ubuntu
