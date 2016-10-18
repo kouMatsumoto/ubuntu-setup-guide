@@ -40,6 +40,9 @@ git config --global user.name "my name"
 git config --global user.email myemail@example.com
 ```
 
+### Create SSH Key
+create ~/.ssh/id_rsa
+
 ### Git flow
 See 
 https://github.com/petervanderdoes/gitflow-avh/wiki/Installing-on-Linux,-Unix,-etc.
@@ -76,3 +79,6 @@ nvm install node
 
 #### slack
 Install Slack Application for Ubuntu
+
+#### WebStorm Setting
+- Setting repository
