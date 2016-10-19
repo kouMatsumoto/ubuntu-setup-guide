@@ -75,6 +75,9 @@ nvm install node
 0. node-gyp
 
 
+### MongoDB
+see https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
+
 
 
 #### slack
