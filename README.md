@@ -14,6 +14,9 @@ See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 Use fcitx and Mozc
 See [https://hirooka.pro/?p=8373](https://hirooka.pro/?p=8373)
 
+After enabled fcitx, change shortcut for "Fcitx Clipboard access".  
+`fxitx Input Method Configuration > Addon > Clipboard`  
+As default, this will conflict with WebStorm AceJump shortcut.
 
 # Install Core Apps
 0. apt-get update
