@@ -80,7 +80,10 @@ nvm install node
 
 ### MongoDB
 see https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
-
+```
+sudo mkdir -p /data/db
+sudo chown -R `id -u` /data/db
+```
 
 
 #### slack
