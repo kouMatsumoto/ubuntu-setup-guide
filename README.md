@@ -22,6 +22,7 @@ As default, this will conflict with WebStorm AceJump shortcut.
 
 # Install Core Apps
 0. apt-get update
+0. xsel
 0. git
 0. Node.js
 0. npm packages as global
@@ -30,19 +31,25 @@ As default, this will conflict with WebStorm AceJump shortcut.
 ### apt-get update
 First of all, you should update apt-get packages before installing other apps.
 ```
-sudo apt-get update
+$sudo apt-get update
+```
+
+### xsel
+Install xsel, a command-line clipboard copy and paste utility.
+```
+$sudo apt-get install xsel
 ```
 
 ### git
 Install through apt-get
 ```
-sudo apt-get install git
+$sudo apt-get install git
 ```
 
 After installing, set configs
 ```
-git config --global user.name "my name"
-git config --global user.email myemail@example.com
+$git config --global user.name "my name"
+$git config --global user.email myemail@example.com
 ```
 
 ### Create SSH Key
@@ -63,6 +70,14 @@ $ssh-keygen -t rsa
 Note that the key name is recommended `id_rsa` (default).  
 The reason for git uses `id_rsa` in default settings.
 
+Now, register key to github.com.
+
+Copy id_rsa.pub to clipboard.
+```
+$xsel --clipboard < id_rsa.pub
+```
+
+Register this on [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
 
 ### Git flow
@@ -76,21 +91,21 @@ See installation [github.com/nvm](https://github.com/creationix/nvm)
 
 First, make sure the ```build-essential``` and ```libssl-dev``` packages work.
 ```
-sudo apt-get install build-essential libssl-dev
+$sudo apt-get install build-essential libssl-dev
 ```
 
 Next, install script using cURL  
 Confirm latest url in above link.
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+$curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
 ```
 
 Then, refresh bash and install Node.js
 ```
-source ~/.bashrc
+$source ~/.bashrc
 ```
 ```
-nvm install node
+$nvm install node
 ```
 
 ### npm packages as global
@@ -100,8 +115,8 @@ nvm install node
 ### MongoDB
 see https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
 ```
-sudo mkdir -p /data/db
-sudo chown -R `id -u` /data/db
+$sudo mkdir -p /data/db
+$sudo chown -R `id -u` /data/db
 ```
 
 
