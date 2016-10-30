@@ -1,5 +1,7 @@
 # Ubuntu-Setup-Guide
-My setup guide for Ubuntu to web development using Node.js
+My setup guide for Ubuntu to web development using Node.js  
+
+`This note is now draft`
 
 
 # System Settings
@@ -44,7 +46,13 @@ git config --global user.email myemail@example.com
 ```
 
 ### Create SSH Key
-create ~/.ssh/id_rsa
+create ssh key to ~/.ssh
+
+Make sure `~/.ssh` is exists or create.
+```
+$mkdir ~/.ssh
+$cd ~/.ssh
+```
 
 ### Git flow
 See 
