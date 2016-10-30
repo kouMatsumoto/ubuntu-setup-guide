@@ -46,13 +46,24 @@ git config --global user.email myemail@example.com
 ```
 
 ### Create SSH Key
-create ssh key to ~/.ssh
+create ssh keys to `~/.ssh`.
 
 Make sure `~/.ssh` is exists or create.
 ```
+$ls -la ~/.ssh
 $mkdir ~/.ssh
 $cd ~/.ssh
 ```
+
+Next create ssh keys
+```
+$ssh-keygen -t rsa
+```
+
+Note that the key name is recommended `id_rsa` (default).  
+The reason for git uses `id_rsa` in default settings.
+
+
 
 ### Git flow
 See 
