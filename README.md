@@ -12,6 +12,37 @@ My setup guide for Ubuntu to web development using Node.js
 Install "Consolas" font Microsoft made for programming.  
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 
+Install packages to install fonts.
+```
+$ sudo apt-get install font-manager
+$ sudo apt-get install cabextract
+```
+
+Create consoles.sh to download and execute.
+```
+$ sudo vi consolas.sh
+
+#!/bin/sh
+set -e
+set -x
+mkdir temp
+cd temp
+wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
+cabextract -L -F ppviewer.cab PowerPointViewer.exe
+cabextract ppviewer.cab
+```
+
+```
+$ sudo chmod +x consolas.sh
+$ sudo ./consolas.sh
+```
+
+
+```
+$ cd temp
+$ font-manager
+```
+
 ### Enable Japanese to input methods
 Use fcitx and Mozc
 See [https://hirooka.pro/?p=8373](https://hirooka.pro/?p=8373)
