@@ -8,6 +8,13 @@ My setup guide for Ubuntu to web development using Node.js
 - Install fonts
 
 
+### Install vim
+Default vi may be old. Install vim with apt.
+```
+$ sudo apt install vim 
+```
+
+
 ### Install fonts
 Install "Consolas" font Microsoft made for programming.  
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
