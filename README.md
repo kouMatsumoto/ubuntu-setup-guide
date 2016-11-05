@@ -27,7 +27,7 @@ $ sudo apt-get install cabextract
 
 Create consoles.sh to download and execute.
 ```
-$ sudo vi consolas.sh
+$ sudo vim consolas.sh
 
 #!/bin/sh
 set -e
