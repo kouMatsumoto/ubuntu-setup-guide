@@ -21,8 +21,11 @@
   1. [Install fonts](#install-fonts)
   1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
 1. [Software to web development](#software-to-web-development)
+  1. [WebStorm](#webstorm)
+  1. [Visual Studio Code](#visual-studio-code)
   1. [Git](#git)
   1. [Node.js](#nodejs)
+  1. [MongoDB](#mongodb)
 1. [Other utilities](#other-utilities)
 
 
@@ -134,6 +137,17 @@ As default, this will conflict with WebStorm AceJump shortcut.
 # Software to web development
 Install and set-up core software to web development.
 
+### WebStorm
+Primary IDE to develop web.
+
+Download from [jetbrains.com](https://www.jetbrains.com/webstorm/).
+
+
+### Visual Studio Code
+Secondary editor to edit brief code.
+
+Download from [code.visualstudio.com](https://code.visualstudio.com/)
+
 
 ### Git
 Install with apt-get
@@ -201,17 +215,20 @@ Install through NVM (Node Version Manager)
 See installation [github.com/nvm](https://github.com/creationix/nvm)
 
 First, make sure the ```build-essential``` and ```libssl-dev``` packages work.
+
 ```
 $ sudo apt-get install build-essential libssl-dev
 ```
 
 Next, install script using cURL  
 Confirm latest url in above link.
+
 ```
 $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
 ```
 
 Then, refresh bash and install Node.js
+
 ```
 $ source ~/.bashrc
 ```
@@ -219,22 +236,29 @@ $ source ~/.bashrc
 $ nvm install node
 ```
 
-### npm packages as global
-0. node-gyp
+#### npm modules you should install as global
+Below modules is often used and useful if installed in global.
+
+1. node-gyp
+1. gulp
+1. typescript
+
 
 
 ### MongoDB
 see https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
+
 ```
 $ sudo mkdir -p /data/db
 $ sudo chown -R `id -u` /data/db
 ```
 
 
+
 #Other utilities
 
-#### slack
+### slack
 Install Slack Application for Ubuntu
 
-#### WebStorm Setting
+### WebStorm Setting
 - Setting repository
