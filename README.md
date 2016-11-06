@@ -75,18 +75,21 @@ After enabled fcitx, change shortcut for "Fcitx Clipboard access".
 `fxitx Input Method Configuration > Addon > Clipboard`  
 As default, this will conflict with WebStorm AceJump shortcut.
 
+
+### Install xsel
+A utility command-line tool for clipboard copy and paste.
+
+```
+$sudo apt-get install xsel
+```
+
+
+
 # Install Core Apps
-0. xsel
 0. git
 0. Node.js
 0. npm packages as global
 
-
-### xsel
-Install xsel, a command-line clipboard copy and paste utility.
-```
-$sudo apt-get install xsel
-```
 
 ### git
 Install through apt-get
