@@ -1,10 +1,26 @@
 # Ubuntu-Setup-Guide
-My setup guide for Ubuntu to web development using Node.js  
+### The setup guides for Ubuntu OS to develop Node.js web system.
+
+---
 
 `This note is now draft`
 
+---
+
+> If you are Windows user, see [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)
+> If you are MacOS user, see [MacOS Setup Guides](https://github.com/kouMatsumoto/macos-setup-guide)
+
+---
+
+## Table of contents
+
+1. [System Settings and Essential packages](#system-settings-and-essential-packages)
+2. [Software to web development](#install-software-to-web-development)
+3. [Other utilities](#other-utilities)
 
 
+
+#System Settings and Essential packages
 
 
 ### Update packages
@@ -28,7 +44,7 @@ A utility command-line tool for clipboard copy and paste.
 This will be used to copy ssh-key to clipboard.
 
 ```
-$sudo apt-get install xsel
+$ sudo apt-get install xsel
 ```
 
 
@@ -88,7 +104,8 @@ As default, this will conflict with WebStorm AceJump shortcut.
 
 
 
-# Install Core Apps
+# Software to web development
+
 0. git
 0. Node.js
 0. npm packages as global
@@ -97,13 +114,13 @@ As default, this will conflict with WebStorm AceJump shortcut.
 ### git
 Install through apt-get
 ```
-$sudo apt-get install git
+$ sudo apt-get install git
 ```
 
 After installing, set configs
 ```
-$git config --global user.name "my name"
-$git config --global user.email myemail@example.com
+$ git config --global user.name "my name"
+$ git config --global user.email myemail@example.com
 ```
 
 ### Create SSH Key
@@ -153,21 +170,21 @@ See installation [github.com/nvm](https://github.com/creationix/nvm)
 
 First, make sure the ```build-essential``` and ```libssl-dev``` packages work.
 ```
-$sudo apt-get install build-essential libssl-dev
+$ sudo apt-get install build-essential libssl-dev
 ```
 
 Next, install script using cURL  
 Confirm latest url in above link.
 ```
-$curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
 ```
 
 Then, refresh bash and install Node.js
 ```
-$source ~/.bashrc
+$ source ~/.bashrc
 ```
 ```
-$nvm install node
+$ nvm install node
 ```
 
 ### npm packages as global
@@ -177,10 +194,12 @@ $nvm install node
 ### MongoDB
 see https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
 ```
-$sudo mkdir -p /data/db
-$sudo chown -R `id -u` /data/db
+$ sudo mkdir -p /data/db
+$ sudo chown -R `id -u` /data/db
 ```
 
+
+#Other utilities
 
 #### slack
 Install Slack Application for Ubuntu
