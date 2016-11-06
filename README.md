@@ -139,14 +139,23 @@ Install and set-up core software to web development.
 
 ### WebStorm
 Primary IDE to develop web.
+Download from [jetbrains.com](https://www.jetbrains.com/webstorm/) and Install.
 
-Download from [jetbrains.com](https://www.jetbrains.com/webstorm/).
+#### Settings Repository
+Set your repository and overwrite your local settings.
 
+#### Install Plugins
+Install useful plugins below.
+
+- .ignore
+- AceJump
+- gfm
+- Git Flow Integration
+- Markdown Support
 
 ### Visual Studio Code
 Secondary editor to edit brief code.
-
-Download from [code.visualstudio.com](https://code.visualstudio.com/)
+Download from [code.visualstudio.com](https://code.visualstudio.com/) and Install.
 
 
 ### Git
@@ -156,7 +165,6 @@ Install with apt-get
 $ sudo apt-get install git
 ```
 
-
 #### Set global configs
 After installing, set global configs
 
@@ -164,7 +172,6 @@ After installing, set global configs
 $ git config --global user.name "my name"
 $ git config --global user.email myemail@example.com
 ```
-
 
 #### Create ssh-key and register to GitHub
 create ssh keys in `~/.ssh`, after checking existence.
@@ -200,7 +207,6 @@ Test connection to github.
 ```
 $ ssh -T git@github.com
 ```
-
 
 #### Git flow
 Install with apt-get.
@@ -259,6 +265,3 @@ $ sudo chown -R `id -u` /data/db
 
 ### slack
 Install Slack Application for Ubuntu
-
-### WebStorm Setting
-- Setting repository
