@@ -111,14 +111,15 @@ create ssh keys to `~/.ssh`.
 
 Make sure `~/.ssh` is exists or create.
 ```
-$ls -la ~/.ssh
-$mkdir ~/.ssh
-$cd ~/.ssh
+$ cd ~
+$ ls -la .ssh
+$ mkdir .ssh
+$ cd .ssh
 ```
 
 Next create ssh keys
 ```
-$ssh-keygen -t rsa
+$ ssh-keygen -t rsa
 ```
 
 Note that the key name is recommended `id_rsa` (default).  
@@ -128,11 +129,15 @@ Now, register key to github.com.
 
 Copy id_rsa.pub to clipboard.
 ```
-$xsel --clipboard < id_rsa.pub
+$ xsel --clipboard < id_rsa.pub
 ```
 
 Register this on [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
+Test connection to github.
+```
+$ ssh -T git@github.com
+```
 
 ### Git flow
 See 
