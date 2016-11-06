@@ -4,19 +4,31 @@ My setup guide for Ubuntu to web development using Node.js
 `This note is now draft`
 
 
-# System Settings
-- Install fonts
+
+
+
+### Update packages
+First of all, update packages of apt-get.
+
+```
+$ sudo apt-get update
+```
 
 
 ### Install vim
 Default vi may be old. Install vim with apt.
+
 ```
 $ sudo apt install vim 
 ```
 
 
 ### Install fonts
-Install "Consolas" font Microsoft made for programming.  
+Install popular fonts below.
+
+- "Consolas": The font for programming Microsoft made.
+- "Meiryo": The font to check web design.
+
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 
 Install packages to install fonts.
@@ -64,18 +76,11 @@ After enabled fcitx, change shortcut for "Fcitx Clipboard access".
 As default, this will conflict with WebStorm AceJump shortcut.
 
 # Install Core Apps
-0. apt-get update
 0. xsel
 0. git
 0. Node.js
 0. npm packages as global
 
-
-### apt-get update
-First of all, you should update apt-get packages before installing other apps.
-```
-$sudo apt-get update
-```
 
 ### xsel
 Install xsel, a command-line clipboard copy and paste utility.
