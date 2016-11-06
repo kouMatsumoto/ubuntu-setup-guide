@@ -15,16 +15,21 @@
 ## Table of contents
 
 1. [System Settings and Essential packages](#system-settings-and-essential-packages)
-2. [Software to web development](#install-software-to-web-development)
+  1. [Update packages](#update-packages)
+  1. [Install vim](#install-vim)
+  1. [Install xsel](#install-xsel)
+  1. [Install fonts](#install-fonts)
+  1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
+2. [Software to web development](#software-to-web-development)
 3. [Other utilities](#other-utilities)
 
 
 
 #System Settings and Essential packages
-
+Before installing software to web development, Get your Ubuntu ready.
 
 ### Update packages
-First of all, update packages of apt-get.
+First of all, update installed packages in apt-get.
 
 ```
 $ sudo apt-get update
@@ -54,6 +59,7 @@ Install popular fonts below.
 - Consolas: The font for programming Microsoft made.
 - Meiryo: The font to check web design.
 
+#### Consolas and Meiryo
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 
 Install packages to install fonts.
@@ -62,7 +68,7 @@ $ sudo apt-get install font-manager
 $ sudo apt-get install cabextract
 ```
 
-Create consoles.sh to download and execute.
+Create consoles.sh to download font data and make installable.
 ```
 $ sudo vim consolas.sh
 
@@ -79,22 +85,36 @@ cabextract ppviewer.cab
 ```
 $ sudo chmod +x consolas.sh
 $ sudo ./consolas.sh
-```
-
-
-```
 $ cd temp
 $ font-manager
 ```
 
-### Enable Japanese to input methods
-Use fcitx and Mozc
-See [https://hirooka.pro/?p=8373](https://hirooka.pro/?p=8373)
+Install fonts with font-manager GUI.
 
-Install
+
+### Enable Japanese as the input method
+Use fcitx and Mozc to input Japanese.
+See [this post](https://hirooka.pro/?p=8373).
+
+Install fcitx-mozc
 ```
 $ sudo apt-get install fcitx-mozc
 ```
+
+Change Language Support settings.
+```
+Open "System Settings" - "Language Support"
+Change "Keyboard input method system" to "fcitx"
+Logout Ubuntu
+Login Ubuntu
+Open "Application" - "Fcitx Configuration"
+Select "input Method" tab
+Add "mozc(Japanese)" (Disable "Only show Current Language" check)
+Select "Global Config" - "Hotkey"
+Set "Trigger Input Method" to [Super]+[Space]
+Confirm you can use Japanese input method with [Super]+[Space] toggle
+```
+
 
 After enabled fcitx, change shortcut for "Fcitx Clipboard access".  
 `fxitx Input Method Configuration > Addon > Clipboard`  
