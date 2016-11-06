@@ -142,7 +142,10 @@ $ ssh -T git@github.com
 ### Git flow
 See [installation](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation)
 
-
+Install with apt-get.
+```
+$ sudo apt-get install git-flow
+```
 
 ### Node.js
 Install through NVM (Node Version Manager)  
