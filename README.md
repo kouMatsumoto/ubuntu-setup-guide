@@ -16,18 +16,27 @@ $ sudo apt-get update
 
 
 ### Install vim
-Default vi may be old. Install vim with apt.
+Default vi may be old. Install newest vim with apt.
 
 ```
 $ sudo apt install vim 
 ```
 
 
+### Install xsel
+A utility command-line tool for clipboard copy and paste.  
+This will be used to copy ssh-key to clipboard.
+
+```
+$sudo apt-get install xsel
+```
+
+
 ### Install fonts
 Install popular fonts below.
 
-- "Consolas": The font for programming Microsoft made.
-- "Meiryo": The font to check web design.
+- Consolas: The font for programming Microsoft made.
+- Meiryo: The font to check web design.
 
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 
@@ -76,12 +85,6 @@ After enabled fcitx, change shortcut for "Fcitx Clipboard access".
 As default, this will conflict with WebStorm AceJump shortcut.
 
 
-### Install xsel
-A utility command-line tool for clipboard copy and paste.
-
-```
-$sudo apt-get install xsel
-```
 
 
 
