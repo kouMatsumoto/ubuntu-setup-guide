@@ -7,7 +7,7 @@
 
 ---
 
-> If you are Windows user, see [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)
+> If you are Windows user, see [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)  
 > If you are MacOS user, see [MacOS Setup Guides](https://github.com/kouMatsumoto/macos-setup-guide)
 
 ---
@@ -20,8 +20,10 @@
   1. [Install xsel](#install-xsel)
   1. [Install fonts](#install-fonts)
   1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
-2. [Software to web development](#software-to-web-development)
-3. [Other utilities](#other-utilities)
+1. [Software to web development](#software-to-web-development)
+  1. [Git](#git)
+  1. [Node.js](#nodejs)
+1. [Other utilities](#other-utilities)
 
 
 
@@ -63,12 +65,14 @@ Install popular fonts below.
 See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
 
 Install packages to install fonts.
+
 ```
 $ sudo apt-get install font-manager
 $ sudo apt-get install cabextract
 ```
 
 Create consoles.sh to download font data and make installable.
+
 ```
 $ sudo vim consolas.sh
 
@@ -97,11 +101,13 @@ Use fcitx and Mozc to input Japanese.
 See [this post](https://hirooka.pro/?p=8373).
 
 Install fcitx-mozc
+
 ```
 $ sudo apt-get install fcitx-mozc
 ```
 
 Change Language Support settings.
+
 ```
 Open "System Settings" - "Language Support"
 Change "Keyboard input method system" to "fcitx"
@@ -121,32 +127,34 @@ After enabled fcitx, change shortcut for "Fcitx Clipboard access".
 As default, this will conflict with WebStorm AceJump shortcut.
 
 
+**[Back to top](#table-of-contents)**
 
 
 
 # Software to web development
-
-0. git
-0. Node.js
-0. npm packages as global
+Install and set-up core software to web development.
 
 
-### git
-Install through apt-get
+### Git
+Install with apt-get
+
 ```
 $ sudo apt-get install git
 ```
 
-After installing, set configs
+
+#### Set global configs
+After installing, set global configs
+
 ```
 $ git config --global user.name "my name"
 $ git config --global user.email myemail@example.com
 ```
 
-### Create SSH Key
-create ssh keys to `~/.ssh`.
 
-Make sure `~/.ssh` is exists or create.
+#### Create ssh-key and register to GitHub
+create ssh keys in `~/.ssh`, after checking existence.
+
 ```
 $ cd ~
 $ ls -la .ssh
@@ -159,12 +167,14 @@ Next create ssh keys
 $ ssh-keygen -t rsa
 ```
 
-Note that the key name is recommended `id_rsa` (default).  
-The reason for git uses `id_rsa` in default settings.
+**Note:** The key name is recommended `id_rsa` (default).
+This reason is that by default git uses `id_rsa` to connect server.
+In this case, you don't need to change ssh-key settings of git config. 
 
 Now, register key to github.com.
 
 Copy id_rsa.pub to clipboard.
+
 ```
 $ xsel --clipboard < id_rsa.pub
 ```
@@ -172,17 +182,19 @@ $ xsel --clipboard < id_rsa.pub
 Register this on [https://github.com/settings/ssh](https://github.com/settings/ssh).
 
 Test connection to github.
+
 ```
 $ ssh -T git@github.com
 ```
 
-### Git flow
-See [installation](https://github.com/petervanderdoes/gitflow-avh/wiki/Installation)
 
+#### Git flow
 Install with apt-get.
+
 ```
 $ sudo apt-get install git-flow
 ```
+
 
 ### Node.js
 Install through NVM (Node Version Manager)  
