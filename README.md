@@ -153,6 +153,9 @@ Install useful plugins below.
 - Git Flow Integration
 - Markdown Support
 
+#### Change Ubuntu system shortcuts
+See [this post](http://askubuntu.com/questions/412046/unable-to-use-intellij-idea-keyboard-shortcuts-on-ubuntu)
+
 ### Visual Studio Code
 Secondary editor to edit brief code.
 Download from [code.visualstudio.com](https://code.visualstudio.com/) and Install.
