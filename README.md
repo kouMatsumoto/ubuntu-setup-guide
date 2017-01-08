@@ -267,4 +267,4 @@ $ sudo chown -R `id -u` /data/db
 #Other utilities
 
 ### slack
-Install Slack Application for Ubuntu
+Install Slack Application for Ubuntu from [slack.com](https://slack.com/downloads/linux)
