@@ -266,5 +266,15 @@ $ sudo chown -R `id -u` /data/db
 
 #Other utilities
 
+### Ansible
+See installation [http://docs.ansible.com/ansible/intro_installation.html](http://docs.ansible.com/ansible/intro_installation.html)
+
+```
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+```
+
 ### slack
 Install Slack Application for Ubuntu from [slack.com](https://slack.com/downloads/linux)
