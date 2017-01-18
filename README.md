@@ -26,6 +26,7 @@
   1. [Git](#git)
   1. [Node.js](#nodejs)
   1. [MongoDB](#mongodb)
+  1. [Redis](#redis)
 1. [Other utilities](#other-utilities)
 
 
@@ -261,6 +262,14 @@ see https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
 $ sudo mkdir -p /data/db
 $ sudo chown -R `id -u` /data/db
 ```
+
+
+### Redis
+see https://redis.io/download
+see https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
+
+
+
 
 
 
