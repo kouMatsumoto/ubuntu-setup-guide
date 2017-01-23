@@ -285,5 +285,42 @@ $ sudo apt-get update
 $ sudo apt-get install ansible
 ```
 
+### Vagrant and VirtualBox
+Reference URLs
+
+- http://askubuntu.com/questions/465454/problem-with-the-installation-of-virtualbox
+- https://www.olindata.com/blog/2014/07/installing-vagrant-and-virtual-box-ubuntu-1404-lts
+
+#### Disable UEFI Secure Boot through BIOS settings
+To use VirtualBox, It need to be disabled UEFI Secure Boot. 
+First of all, set UEFI Secure Boot disabled.
+
+#### Install VirtualBox
+After setting to disable UEFI Secure Boot, Install VirtualBox with `apt-get`.
+
+```
+$ sudo apt-get install virtualbox
+```
+
+Make sure you can use virtualbox with no errors.
+
+```
+$ virtualbox --help
+```
+
+#### Install Vagrant
+After installing VirtualBox, Install vagrant too.
+
+```
+$ sudo apt-get install vagrant
+```
+
+Make sure you can use vagrant.
+
+```
+$ vagrant --help
+```
+
+
 ### slack
 Install Slack Application for Ubuntu from [slack.com](https://slack.com/downloads/linux)
