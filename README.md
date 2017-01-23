@@ -349,3 +349,6 @@ https://github.com/chef/bento/issues/682
 
 ### slack
 Install Slack Application for Ubuntu from [slack.com](https://slack.com/downloads/linux)
+
+### Google Chrome
+https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xenial-xerus-linux
