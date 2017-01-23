@@ -317,9 +317,28 @@ $ sudo apt-get install vagrant
 
 Make sure you can use vagrant.
 
+Uncomment this part of Vagrantfile
+
 ```
-$ vagrant --help
+config.vm.provider "virtualbox" do |vb|
+    # Display the VirtualBox GUI when booting the machine
+    vb.gui = true
+
+    # Customize the amount of memory on the VM:
+    vb.memory = "1024"
+ end
 ```
+
+Add this setting to Vagrantfile
+
+```
+vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
+```
+
+* Ubuntu16.04 on Vagrant *
+https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1604-desktop
+https://github.com/chef/bento/issues/682
+
 
 
 ### slack
