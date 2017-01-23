@@ -41,6 +41,12 @@ First of all, update installed packages in apt-get.
 $ sudo apt-get update
 ```
 
+### gdevi
+
+```
+$ sudo apt-get install gdebi
+```
+
 
 ### Install vim
 Default vi may be old. Install newest vim with apt.
