@@ -335,11 +335,20 @@ config.vm.provider "virtualbox" do |vb|
  end
 ```
 
-Add this setting to Vagrantfile
+##### Optional settings
+Change synced falder setting.
+
+```
+config.vm.synced_folder "../data", "/vagrant_data"
+```
+
+When error occurs.
 
 ```
 vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
 ```
+
+
 
 * Ubuntu16.04 on Vagrant *
 https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1604-desktop
