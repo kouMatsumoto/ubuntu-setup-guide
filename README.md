@@ -107,6 +107,9 @@ Install fonts with font-manager GUI.
 
 
 ### Enable Japanese as the input method
+http://gihyo.jp/admin/serial/01/ubuntu-recipe/0417
+
+
 Use fcitx and Mozc to input Japanese.
 See [this post](https://hirooka.pro/?p=8373).
 
