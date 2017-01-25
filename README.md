@@ -159,6 +159,7 @@ Install useful plugins below.
 - gfm
 - Git Flow Integration
 - Markdown Support
+- YAML/Ansible support
 
 #### Change Ubuntu system shortcuts
 See [this post](http://askubuntu.com/questions/412046/unable-to-use-intellij-idea-keyboard-shortcuts-on-ubuntu)
