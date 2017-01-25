@@ -159,6 +159,7 @@ Install useful plugins below.
 - gfm
 - Git Flow Integration
 - Markdown Support
+- BashSupport
 - YAML/Ansible support
 
 #### Change Ubuntu system shortcuts
