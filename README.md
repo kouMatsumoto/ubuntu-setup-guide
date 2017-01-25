@@ -338,6 +338,13 @@ config.vm.provider "virtualbox" do |vb|
 ```
 
 ##### Optional settings
+To access with ansible, enable private_network
+
+```
+config.vm.network "private_network", ip: "192.168.33.10"
+```
+
+
 Change synced falder setting.
 
 ```
