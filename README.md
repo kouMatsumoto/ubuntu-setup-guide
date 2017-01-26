@@ -64,6 +64,9 @@ This will be used to copy ssh-key to clipboard.
 $ sudo apt-get install xsel
 ```
 
+### cabextract
+
+
 
 ### Install fonts
 Install popular fonts below.
