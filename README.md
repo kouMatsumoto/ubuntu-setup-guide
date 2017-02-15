@@ -233,6 +233,11 @@ Install with apt-get.
 $ sudo apt-get install git-flow
 ```
 
+#### Git quick-state
+See installation.
+
+https://github.com/arzzen/git-quick-stats
+
 
 ### Node.js
 Install through NVM (Node Version Manager)  
