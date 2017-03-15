@@ -55,6 +55,12 @@ Default vi may be old. Install newest vim with apt.
 $ sudo apt install vim 
 ```
 
+After install, change default editor for OS. (usually default is nano.)
+
+```
+$ sudo update-alternatives --config editor
+```
+
 
 ### Install xsel
 A utility command-line tool for clipboard copy and paste.  
