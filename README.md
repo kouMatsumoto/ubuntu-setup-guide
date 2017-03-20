@@ -294,7 +294,10 @@ see https://redis.io/download
 see https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
 
 
+### MySQL
 
+Rails and MySQL
+see https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04
 
 
 
