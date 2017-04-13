@@ -1,5 +1,5 @@
 # Ubuntu-Setup-Guide
-### This is the setup guide for Ubuntu to develop Web focusing on Node.js.
+### This is the setup guide for Ubuntu to develop web-system focusing on Node.js.
 
 ---
 
