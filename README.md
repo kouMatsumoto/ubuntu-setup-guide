@@ -7,8 +7,10 @@
 
 ---
 
-> Windows version. [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)  
-> MacOS version. [MacOS Setup Guides](https://github.com/kouMatsumoto/macos-setup-guide)
+> Supported version: `Ubuntu 16.04.2 LTS`
+>
+> For Windows: [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)  
+> For MacOS: [MacOS Setup Guides](https://github.com/kouMatsumoto/macos-setup-guide)
 
 ---
 
