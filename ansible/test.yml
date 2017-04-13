@@ -1,5 +1,8 @@
 ---
-- hosts: vagrant
-  remote_user: '{{user_name}}'
+- hosts: local
+  connection: local
   roles:
-    - font
+    - timezone
+  tasks:
+    - name: ping test
+      ping:
