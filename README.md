@@ -1,4 +1,4 @@
-# Ubuntu-Setup-Guide
+# Ubuntu Setup Guide
 ### This is the setup guide for Ubuntu to develop web-system focusing on Node.js.
 
 ---
@@ -15,7 +15,7 @@
 ---
 
 ## Table of contents
-
+1. [Install Ansible](#install-ansible)
 1. [System Settings and Essential packages](#system-settings-and-essential-packages)
   1. [Update packages](#update-packages)
   1. [Install vim](#install-vim)
@@ -31,6 +31,26 @@
   1. [Redis](#redis)
 1. [Other utilities](#other-utilities)
 
+
+
+# Install Ansible
+In this setup guide, we use Ansible to set-up our Ubuntu automatically.  
+First of all, install Ansible and make sure you can use `ansible` command.
+
+### How to install Ansible
+1. Install following official installation: [docs.ansible.com](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-apt-ubuntu)  
+2. Install by using shell-script of this setup-guide: [install-ansible.sh](https://github.com/kouMatsumoto/ubuntu-setup-guide/blob/master/install-ansible.sh)
+
+After installation, make sure you can use `ansible` command.
+
+```bash
+$ ansible --version
+
+# expected
+ansible 2.2.1.0
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = Default w/o overrides
+```
 
 
 # System Settings and Essential packages
