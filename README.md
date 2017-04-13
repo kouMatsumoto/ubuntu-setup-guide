@@ -1,14 +1,14 @@
 # Ubuntu-Setup-Guide
-### The setup guides for Ubuntu OS to develop Node.js web system.
+### This is the setup guide for Ubuntu to develop Web focusing on Node.js.
 
 ---
 
-`This note is now draft`
+`This note is presently in draft`
 
 ---
 
-> If you are Windows user, see [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)  
-> If you are MacOS user, see [MacOS Setup Guides](https://github.com/kouMatsumoto/macos-setup-guide)
+> Windows version. [Windows Setup Guides](https://github.com/kouMatsumoto/windows10-setup-guide)  
+> MacOS version. [MacOS Setup Guides](https://github.com/kouMatsumoto/macos-setup-guide)
 
 ---
 
@@ -31,7 +31,7 @@
 
 
 
-#System Settings and Essential packages
+# System Settings and Essential packages
 Before installing software to web development, Get your Ubuntu ready.
 
 ### Update packages
