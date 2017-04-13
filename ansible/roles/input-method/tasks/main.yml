@@ -1,0 +1,56 @@
+---
+# tasks to enable to use Japanese input method
+
+- name: check whether languages-support lack
+  sudo: yes
+  command: check-language-support
+  register: package_list_of_lacking_languages
+
+
+# - name: debug
+#   debug: var=package_list_of_lacking_languages
+
+- name: install lack of language packages when lacking
+  sudo: yes
+  shell: apt-get install $(check-language-support)
+  when: package_list_of_lacking_languages.stdout != ''
+
+
+- name: set variables to language
+  set_fact:
+    language_code: ja
+
+# See: https://www.hiroom2.com/2016/05/13/ubuntu-16-04%E3%81%AE%E4%B8%8D%E5%AE%8C%E5%85%A8%E3%81%AA%E8%A8%80%E8%AA%9E%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92%E4%BF%AE%E6%AD%A3%E3%81%97%E3%81%A6%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%AF%BE%E5%BF%9C%E3%81%99%E3%82%8B/
+- name: install Japanese langulage-pack
+  sudo: yes
+  apt:
+    name: '{{ item }}'
+    state: latest
+  with_items:
+    - language-pack-{{ language_code }}
+    - language-pack-gnome-{{ language_code }}
+    - language-pack-{{ language_code }}-base
+    - language-pack-gnome-{{ language_code }}-base
+
+
+- name: install fcitx-mozc
+  sudo: yes
+  apt:
+    name: fcitx-mozc
+    state: latest
+
+
+- name: enable fcitx
+  command: im-config -n fcitx
+
+
+# profile is placed ~/.config/fcitx/profile
+# NOTE: this profile is override on change fcitx used, so this changing is thrown something away.
+
+#- name: update fcitx config file
+#  template:
+#    src: profile
+#    dest: ~/.config/fcitx/profile
+#    owner: '{{ user_name }}'
+#    group: '{{ user_name }}'
+#    mode: 0644

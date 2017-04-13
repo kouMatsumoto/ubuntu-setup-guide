@@ -1,0 +1,24 @@
+---
+# tasks to install fonts
+
+- name: install font-manager
+  sudo: yes
+  apt:
+    name: font-manager
+    state: latest
+
+
+- name: ensure whether consolas already exists
+  register: consolas_stat
+  stat:
+    path: /usr/share/fonts/truetype/consolas
+
+
+- name: add font consolas
+  sudo: yes
+  copy:
+    mode: 0755
+    src: ./font_data/consolas
+    dest: /usr/share/fonts/truetype/
+  when: consolas_stat.stat.exists == false
+  notify: reload fonts

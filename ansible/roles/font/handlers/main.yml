@@ -1,0 +1,6 @@
+---
+# reload fonts data
+
+- name: reload fonts
+  sudo: yes
+  command: fc-cache -f

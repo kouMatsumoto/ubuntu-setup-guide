@@ -1,0 +1,5 @@
+---
+# prerequisite: cabextract
+
+dependencies:
+  - { role: apt-essential-package }

@@ -1,2 +1,5 @@
 # Editors and IDEs setting
 .idea
+
+# ansible's auto-generation files
+ansible/*.retry

@@ -1,0 +1,14 @@
+---
+# tasks to install essential apt packages
+
+- name: apt install essential packages
+  sudo: yes
+  apt:
+    name: '{{ item }}'
+    state: latest
+  with_items:
+    - cabextract
+    - gdebi
+    - git
+    - vim
+    - xsel
