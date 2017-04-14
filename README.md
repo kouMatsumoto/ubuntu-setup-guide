@@ -53,6 +53,15 @@ ansible 2.2.1.0
 ```
 
 
+# Set-up with Ansible Automation
+
+### System-Settings
+- TimeZone
+- 
+
+
+
+
 # System Settings and Essential packages
 Before installing software to web development, Get your Ubuntu ready.
 
