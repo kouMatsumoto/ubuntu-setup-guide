@@ -1,0 +1,9 @@
+---
+- hosts: vagrant
+  remote_user: '{{user_name}}'
+  roles:
+    #- timezone
+    - locale
+    #- input-method
+    #- apt-essential-package
+    #- font
