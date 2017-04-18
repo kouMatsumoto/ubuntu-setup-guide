@@ -57,8 +57,7 @@ ansible 2.2.1.0
 
 ### System-Settings
 - TimeZone
-- 
-
+- Locale
 
 
 
@@ -102,6 +101,14 @@ $ sudo apt-get install xsel
 ```
 
 ### cabextract
+`cabextract` is software to extract Microsoft cabinet files also called `.cab`.  
+It's need to install fonts of Microsoft such as `Consolas` which is essential font of my-programming.
+
+```
+$ sudo apt-get install cabextract
+```
+
+
 
 
 
