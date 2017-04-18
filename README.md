@@ -15,21 +15,25 @@
 ---
 
 ## Table of contents
-1. [Install Ansible](#install-ansible)
-1. [System Settings and Essential packages](#system-settings-and-essential-packages)
+- [Install Ansible](#install-ansible)
+- [System Settings](#system-settings)
+  1. [TimeZone](#timezone)
+  1. [Locale](#locale)
+- [Essential packages](#essential-packages)
   1. [Update packages](#update-packages)
-  1. [Install vim](#install-vim)
-  1. [Install xsel](#install-xsel)
-  1. [Install fonts](#install-fonts)
+  1. [vim](#vim)
+  1. [xsel](#xsel)
+  1. [cabextract](#cabextract)
+  1. [fonts](#fonts)
   1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
-1. [Software to web development](#software-to-web-development)
+- [Software to web development](#software-to-web-development)
   1. [WebStorm](#webstorm)
   1. [Visual Studio Code](#visual-studio-code)
   1. [Git](#git)
   1. [Node.js](#nodejs)
   1. [MongoDB](#mongodb)
   1. [Redis](#redis)
-1. [Other utilities](#other-utilities)
+- [Other utilities](#other-utilities)
 
 
 
@@ -53,16 +57,17 @@ ansible 2.2.1.0
 ```
 
 
-# Set-up with Ansible Automation
-
-### System-Settings
-- TimeZone
-- Locale
 
 
+# System-Settings
+### TimeZone
+### Locale
 
-# System Settings and Essential packages
-Before installing software to web development, Get your Ubuntu ready.
+
+
+# Essential packages
+These are essential packages of `apt` for your Ubuntu.
+
 
 ### Update packages
 First of all, update installed packages in apt-get.
@@ -77,8 +82,7 @@ $ sudo apt-get update
 $ sudo apt-get install gdebi
 ```
 
-
-### Install vim
+### vim
 Default vi may be old. Install newest vim with apt.
 
 ```
@@ -91,8 +95,7 @@ After install, change default editor for OS. (usually default is nano.)
 $ sudo update-alternatives --config editor
 ```
 
-
-### Install xsel
+### xsel
 A utility command-line tool for clipboard copy and paste.  
 This will be used to copy ssh-key to clipboard.
 
