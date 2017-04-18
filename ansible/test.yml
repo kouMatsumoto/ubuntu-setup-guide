@@ -1,8 +1,5 @@
 ---
-- hosts: local
-  connection: local
+- hosts: vagrant
+  remote_user: '{{user_name}}'
   roles:
-    - timezone
-  tasks:
-    - name: ping test
-      ping:
+    - apt-essential-package

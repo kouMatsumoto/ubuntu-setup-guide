@@ -1,14 +1,21 @@
 ---
 # tasks to install essential apt packages
-
+#
+# - gdebi: package installer for `.deb`
+# - vim: default vi may be old, so install latest vim
+# - git: sourcecode version control
+# - xsel: to copy text to clipboard with cli
+# - cabextract: to extract Microsoft cabinet files also called `.cab`
+#
 - name: apt install essential packages
   sudo: yes
   apt:
     name: '{{ item }}'
     state: latest
+    update_cache: yes
   with_items:
-    - cabextract
     - gdebi
-    - git
     - vim
+    - git
     - xsel
+    - cabextract
