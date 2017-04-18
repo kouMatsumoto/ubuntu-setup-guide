@@ -24,6 +24,7 @@
   1. [vim](#vim)
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
+  1. [font-manager](#font-manager)
   1. [fonts](#fonts)
   1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
 - [Software to web development](#software-to-web-development)
@@ -111,7 +112,12 @@ It's need to install fonts of Microsoft such as `Consolas` which is essential fo
 $ sudo apt-get install cabextract
 ```
 
+### font-manager
+`font-manager` is useful GUI software to manage your fonts.
 
+```bash
+$ sudo apt install font-manager
+```
 
 
 
