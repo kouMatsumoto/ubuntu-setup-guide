@@ -19,6 +19,8 @@
 - [System Settings](#system-settings)
   1. [TimeZone](#timezone)
   1. [Locale](#locale)
+- [Fonts](#fonts)
+  1. [Consolas](#consolas)
 - [Essential packages](#essential-packages)
   1. [Update packages](#update-packages)
   1. [vim](#vim)
@@ -63,6 +65,53 @@ ansible 2.2.1.0
 # System-Settings
 ### TimeZone
 ### Locale
+
+
+
+# Fonts
+### Consolas
+`Consolas` is essential font for me to programming. I use it as default for IDEs and editors.  
+Install manually by following my procedure, or automatically by using ansible.
+
+> In addition to below, refer to this wiki [Ubuntu Consolas Font Install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
+
+
+1. Install prerequisite packages via apt.
+
+- `font-manager` is GUI font management software.
+- `cabextract` is software to extract Microsoft cabinet files also called `.cab`.
+
+```
+$ sudo apt-get install font-manager
+$ sudo apt-get install cabextract
+```
+
+2. Create `consoles.sh` file to download font data and make it installable.
+
+```
+$ sudo vim consolas.sh
+
+#!/bin/sh
+set -e
+set -x
+mkdir temp
+cd temp
+wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
+cabextract -L -F ppviewer.cab PowerPointViewer.exe
+cabextract ppviewer.cab
+```
+
+```bash
+$ sudo chmod +x consolas.sh
+$ sudo ./consolas.sh
+$ cd temp
+$ font-manager
+```
+
+3. Install fonts by using font-manager GUI.
+
+
+
 
 
 
@@ -119,47 +168,6 @@ $ sudo apt-get install cabextract
 $ sudo apt install font-manager
 ```
 
-
-
-### Install fonts
-Install popular fonts below.
-
-- Consolas: The font for programming Microsoft made.
-- Meiryo: The font to check web design.
-
-#### Consolas and Meiryo
-See [How to install](http://ssup2.iptime.org/wiki/Ubuntu_Consolas_Font_Install)
-
-Install packages to install fonts.
-
-```
-$ sudo apt-get install font-manager
-$ sudo apt-get install cabextract
-```
-
-Create consoles.sh to download font data and make installable.
-
-```
-$ sudo vim consolas.sh
-
-#!/bin/sh
-set -e
-set -x
-mkdir temp
-cd temp
-wget http://download.microsoft.com/download/E/6/7/E675FFFC-2A6D-4AB0-B3EB-27C9F8C8F696/PowerPointViewer.exe
-cabextract -L -F ppviewer.cab PowerPointViewer.exe
-cabextract ppviewer.cab
-```
-
-```
-$ sudo chmod +x consolas.sh
-$ sudo ./consolas.sh
-$ cd temp
-$ font-manager
-```
-
-Install fonts with font-manager GUI.
 
 
 ### Enable Japanese as the input method
