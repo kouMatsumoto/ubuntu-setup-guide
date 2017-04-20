@@ -41,19 +41,19 @@
 
 
 # Install Ansible
-In this setup guide, we use Ansible to set-up our Ubuntu automatically.  
-First of all, install Ansible and make sure you can use `ansible` command.
+> By using `Ansible`, we can execute automatically all set-up procedures below.
+
+First of all, install `Ansible` and make sure you can use `ansible` command.
 
 ### How to install Ansible
-1. Install following official installation: [docs.ansible.com](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-apt-ubuntu)  
-2. Install by using shell-script of this setup-guide: [install-ansible.sh](https://github.com/kouMatsumoto/ubuntu-setup-guide/blob/master/install-ansible.sh)
+Refer to the official installation [docs.ansible.com](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-apt-ubuntu), or use my shell-script: [install-ansible.sh](https://github.com/kouMatsumoto/ubuntu-setup-guide/blob/master/install-ansible.sh).
 
 After installation, make sure you can use `ansible` command.
 
 ```bash
 $ ansible --version
 
-# expected
+# expected result
 ansible 2.2.1.0
   config file = /etc/ansible/ansible.cfg
   configured module search path = Default w/o overrides
