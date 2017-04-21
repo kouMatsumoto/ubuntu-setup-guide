@@ -112,6 +112,31 @@ $ font-manager
 
 
 
+### NotoSans
+1. Download zipped font file and extract it.
+
+```bash
+$ wget https://noto-website.storage.googleapis.com/pkgs/NotoSans-hinted.zip
+$ unzip NotoSans-hinted.zip -d NotoSans-hinted
+```
+
+2. Move `.ttf` files to `/usr/share/fonts/truetype/` directory where is recognized by Ubuntu
+
+```bash
+$ sudo mkdir /usr/share/fonts/truetype/notosans
+$ sudo mv NotoSans-hinted/* /usr/share/fonts/truetype/notosans
+```
+
+3 Update font setting
+```bash
+$ fc-cache -f
+```
+
+4 Confirm installed and remove unnecessary files
+```bash
+$ fc-list | grep -i 'notosans'
+$ rm -rf NotoSans-hinted.zip NotoSans-hinted
+```
 
 
 
