@@ -1,5 +1,5 @@
 # Ubuntu Setup Guide
-### This is the setup guide for Ubuntu to develop web-system focusing on Node.js.
+### This is the setup guide for Ubuntu for web development.
 
 ---
 
@@ -21,6 +21,7 @@
   1. [Locale](#locale)
 - [Fonts](#fonts)
   1. [Consolas](#consolas)
+  2. [NotoSans](#notosans)
 - [Essential packages](#essential-packages)
   1. [Update packages](#update-packages)
   1. [vim](#vim)
@@ -34,7 +35,10 @@
   1. [Visual Studio Code](#visual-studio-code)
   1. [Git](#git)
   1. [Node.js](#nodejs)
-  1. [MongoDB](#mongodb)
+  1. [PHP](#php)
+  1. [Ruby](#ruby)
+  1. [MySQL](#mysql)
+  1. [MongoDB](#mongodb)
   1. [Redis](#redis)
 - [Other utilities](#other-utilities)
 
