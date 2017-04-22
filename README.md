@@ -21,7 +21,7 @@
   1. [Locale](#locale)
 - [Fonts](#fonts)
   1. [Consolas](#consolas)
-  2. [NotoSans](#notosans)
+  1. [NotoSans](#notosans)
 - [Essential packages](#essential-packages)
   1. [Update packages](#update-packages)
   1. [vim](#vim)
