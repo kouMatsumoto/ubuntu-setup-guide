@@ -1,0 +1,8 @@
+---
+- name: uwf: enable uwf
+  sudo: yes
+  command: 'ufw enable'
+
+- name: uwf: add rule to allow access from subnet
+  sudo: yes
+  command: 'ufw allow proto tcp from 192.168.0.0/16'
