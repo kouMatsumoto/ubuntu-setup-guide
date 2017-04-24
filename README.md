@@ -29,7 +29,7 @@
   1. [font-manager](#font-manager)
 - [Fonts](#fonts)
   1. [Consolas](#consolas)
-  1. [NotoSans](#notosans)  
+  1. [NotoSans](#notosans)
 - [Input Method](#input-method)
   1. [Enable Japanese](#enable-japanese)
 - [Software to web development](#software-to-web-development)
