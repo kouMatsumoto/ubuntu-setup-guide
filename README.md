@@ -22,6 +22,7 @@
   1. [Locale](#locale)
   1. [Firewall](#firewall)
 - [Essential packages](#essential-packages)
+  1. [gdevi](#gdevi)
   1. [vim](#vim)
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
