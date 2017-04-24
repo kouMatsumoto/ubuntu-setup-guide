@@ -23,6 +23,7 @@
   1. [Firewall](#firewall)
 - [Essential packages](#essential-packages)
   1. [gdevi](#gdevi)
+  1. [git](#git)
   1. [vim](#vim)
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
@@ -126,6 +127,12 @@ These are essential packages of `apt` for your Ubuntu.
 
 ```
 $ sudo apt-get install gdebi
+```
+
+### git
+
+```
+$ sudo apt install git
 ```
 
 ### vim
