@@ -73,6 +73,8 @@ ansible 2.2.1.0
 ### Locale
 
 ### Firewall
+We'll use services that open network ports such as nginx.
+So we need to use firewall to keep our machine secure.
 
 1. Enable `ufw`
 ```bash
