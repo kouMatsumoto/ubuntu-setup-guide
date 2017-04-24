@@ -32,8 +32,6 @@
   1. [fonts](#fonts)
   1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
 - [Software to web development](#software-to-web-development)
-  1. [WebStorm](#webstorm)
-  1. [Visual Studio Code](#visual-studio-code)
   1. [Git](#git)
   1. [Node.js](#nodejs)
   1. [PHP](#php)
@@ -41,6 +39,9 @@
   1. [MySQL](#mysql)
   1. [MongoDB](#mongodb)
   1. [Redis](#redis)
+- [IDE and Editors](#ide-and-editors)
+  1. [WebStorm](#webstorm)
+  1. [Visual Studio Code](#visual-studio-code)
 - [Other utilities](#other-utilities)
 
 
