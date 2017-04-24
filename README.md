@@ -76,6 +76,10 @@ ansible 2.2.1.0
 We'll use services that open network ports such as nginx.
 So we need to use firewall to keep our machine secure.
 
+On Ubuntu, we can use `ufw` by default.  
+Enable `ufw` and add few rules to expand default settings.
+
+
 1. Enable `ufw`
 ```bash
 $ sudo ufw enable
