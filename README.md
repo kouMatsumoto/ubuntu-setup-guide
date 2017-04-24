@@ -71,8 +71,18 @@ ansible 2.2.1.0
 # System-Settings
 ### TimeZone
 ### Locale
+
 ### Firewall
 
+1. Enable `ufw`
+```bash
+$ sudo ufw enable
+```
+
+2. Allow access from entire sub-network such as 192.168.\*.\*
+```bash
+$ sudo ufw allow proto tcp from 192.168.0.0/16
+```
 
 
 # Fonts
