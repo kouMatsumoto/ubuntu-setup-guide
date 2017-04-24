@@ -22,3 +22,18 @@
     dest: /usr/share/fonts/truetype/
   when: consolas_stat.stat.exists == false
   notify: reload fonts
+
+
+- name: font: confirm notosans has not installed
+  register: notosans_stat
+  stat:
+    path: /usr/share/fonts/truetype/notosans
+
+- name: font: add notosans
+  sudo: yes
+  copy:
+    mode: 0755
+    src: ./font_data/notosans
+    dest: /usr/share/fonts/truetype/
+  when: notosans_stat.stat.exists == false
+  notify: reload fonts
