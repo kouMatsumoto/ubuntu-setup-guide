@@ -15,13 +15,13 @@
 ---
 
 ## Table of contents
+- [Update apt packages](#update-apt-packages)
 - [Install Ansible](#install-ansible)
 - [System Settings](#system-settings)
   1. [TimeZone](#timezone)
   1. [Locale](#locale)
   1. [Firewall](#firewall)
 - [Essential packages](#essential-packages)
-  1. [Update packages](#update-packages)
   1. [vim](#vim)
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
@@ -43,6 +43,21 @@
   1. [WebStorm](#webstorm)
   1. [Visual Studio Code](#visual-studio-code)
 - [Other utilities](#other-utilities)
+
+
+
+
+# Update apt packages
+First of all, we must update all apt packages installed.
+
+```
+$ sudo apt-get update
+```
+
+
+**[Back to top](#table-of-contents)**
+
+
 
 
 
@@ -105,13 +120,6 @@ $ sudo ufw allow proto tcp from 192.168.0.0/16
 # Essential packages
 These are essential packages of `apt` for your Ubuntu.
 
-
-### Update packages
-First of all, update installed packages in apt-get.
-
-```
-$ sudo apt-get update
-```
 
 ### gdevi
 
