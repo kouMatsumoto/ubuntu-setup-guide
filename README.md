@@ -20,15 +20,15 @@
   1. [TimeZone](#timezone)
   1. [Locale](#locale)
   1. [Firewall](#firewall)
-- [Fonts](#fonts)
-  1. [Consolas](#consolas)
-  1. [NotoSans](#notosans)
 - [Essential packages](#essential-packages)
   1. [Update packages](#update-packages)
   1. [vim](#vim)
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
   1. [font-manager](#font-manager)
+- [Fonts](#fonts)
+  1. [Consolas](#consolas)
+  1. [NotoSans](#notosans)  
 - [Input Method](#input-method)
   1. [Enable Japanese](#enable-japanese)
 - [Software to web development](#software-to-web-development)
@@ -66,6 +66,10 @@ ansible 2.2.1.0
 ```
 
 
+**[Back to top](#table-of-contents)**
+
+
+
 
 
 # System-Settings
@@ -89,6 +93,73 @@ $ sudo ufw enable
 ```bash
 $ sudo ufw allow proto tcp from 192.168.0.0/16
 ```
+
+
+**[Back to top](#table-of-contents)**
+
+
+
+
+
+
+# Essential packages
+These are essential packages of `apt` for your Ubuntu.
+
+
+### Update packages
+First of all, update installed packages in apt-get.
+
+```
+$ sudo apt-get update
+```
+
+### gdevi
+
+```
+$ sudo apt-get install gdebi
+```
+
+### vim
+Default vi may be old. Install newest vim with apt.
+
+```
+$ sudo apt install vim 
+```
+
+After install, change default editor for OS. (usually default is nano.)
+
+```
+$ sudo update-alternatives --config editor
+```
+
+### xsel
+A utility command-line tool for clipboard copy and paste.  
+This will be used to copy ssh-key to clipboard.
+
+```
+$ sudo apt-get install xsel
+```
+
+### cabextract
+`cabextract` is software to extract Microsoft cabinet files also called `.cab`.  
+It's need to install fonts of Microsoft such as `Consolas` which is essential font of my-programming.
+
+```
+$ sudo apt-get install cabextract
+```
+
+### font-manager
+`font-manager` is useful GUI software to manage your fonts.
+
+```bash
+$ sudo apt install font-manager
+```
+
+
+**[Back to top](#table-of-contents)**
+
+
+
 
 
 # Fonts
@@ -162,60 +233,6 @@ $ rm -rf NotoSans-hinted.zip NotoSans-hinted
 ```
 
 
-
-# Essential packages
-These are essential packages of `apt` for your Ubuntu.
-
-
-### Update packages
-First of all, update installed packages in apt-get.
-
-```
-$ sudo apt-get update
-```
-
-### gdevi
-
-```
-$ sudo apt-get install gdebi
-```
-
-### vim
-Default vi may be old. Install newest vim with apt.
-
-```
-$ sudo apt install vim 
-```
-
-After install, change default editor for OS. (usually default is nano.)
-
-```
-$ sudo update-alternatives --config editor
-```
-
-### xsel
-A utility command-line tool for clipboard copy and paste.  
-This will be used to copy ssh-key to clipboard.
-
-```
-$ sudo apt-get install xsel
-```
-
-### cabextract
-`cabextract` is software to extract Microsoft cabinet files also called `.cab`.  
-It's need to install fonts of Microsoft such as `Consolas` which is essential font of my-programming.
-
-```
-$ sudo apt-get install cabextract
-```
-
-### font-manager
-`font-manager` is useful GUI software to manage your fonts.
-
-```bash
-$ sudo apt install font-manager
-```
-
 **[Back to top](#table-of-contents)**
 
 
@@ -259,9 +276,6 @@ As default, this will conflict with WebStorm AceJump shortcut.
 
 
 **[Back to top](#table-of-contents)**
-
-
-
 
 
 
