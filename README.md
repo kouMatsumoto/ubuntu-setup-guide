@@ -29,8 +29,8 @@
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
   1. [font-manager](#font-manager)
-  1. [fonts](#fonts)
-  1. [Enable Japanese as the input method](#enable-japanese-as-the-input-method)
+- [Input Method](#input-method)
+  1. [Enable Japanese](#enable-japanese)
 - [Software to web development](#software-to-web-development)
   1. [Git](#git)
   1. [Node.js](#nodejs)
@@ -216,10 +216,16 @@ $ sudo apt-get install cabextract
 $ sudo apt install font-manager
 ```
 
+**[Back to top](#table-of-contents)**
 
 
-### Enable Japanese as the input method
-http://gihyo.jp/admin/serial/01/ubuntu-recipe/0417
+
+
+
+# Input Method
+
+### Enable Japanese
+> refer to http://gihyo.jp/admin/serial/01/ubuntu-recipe/0417
 
 
 Use fcitx and Mozc to input Japanese.
@@ -253,6 +259,11 @@ As default, this will conflict with WebStorm AceJump shortcut.
 
 
 **[Back to top](#table-of-contents)**
+
+
+
+
+
 
 
 
