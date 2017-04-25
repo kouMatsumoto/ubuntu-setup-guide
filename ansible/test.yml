@@ -2,4 +2,4 @@
 - hosts: vagrant
   remote_user: '{{user_name}}'
   roles:
-    - font
+    - ufw
