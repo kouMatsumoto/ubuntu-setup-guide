@@ -1,8 +1,30 @@
 ---
-- name: enable uwf
-  sudo: yes
-  command: 'ufw enable'
-
 - name: add rule to allow access from subnet
   sudo: yes
-  command: 'ufw allow proto tcp from 192.168.0.0/16'
+  ufw:
+    rule: allow
+    src: 192.168.0.0/16
+
+- name: configure default settings
+  sudo: yes
+  ufw: 'direction={{ item.direction }} policy={{ item.policy }}'
+  with_items:
+    - { direction: 'incoming', policy: 'deny' }
+    - { direction: 'outgoing', policy: 'allow' }
+    - { direction: 'routed', policy: 'deny' }
+
+- name: enable logging
+  sudo: yes
+  ufw:
+    logging: on
+
+- name: enable uwf
+  sudo: yes
+  ufw:
+    state: enabled
+
+- name: restart uwf
+  sudo: yes
+  service:
+    name: ufw
+    state: restarted
