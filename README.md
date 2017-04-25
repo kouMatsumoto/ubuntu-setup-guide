@@ -109,9 +109,23 @@ Enable `ufw` and add few rules to expand default settings.
 $ sudo ufw enable
 ```
 
-2. Allow access from entire sub-network such as 192.168.\*.\*
+2. Add default settings
 ```bash
-$ sudo ufw allow proto tcp from 192.168.0.0/16
+$ sudo ufw default deny incoming
+$ sudo ufw default allow outgoing
+$ sudo ufw default deny routed
+```
+
+3. Allow access from entire sub-network such as 192.168.\*.\*
+We need allow access from other devises of sub-network to develop web.
+
+```bash
+$ sudo ufw allow from 192.168.0.0/16
+```
+
+4. Add logging setting
+```bash
+$ sudo ufw logging on
 ```
 
 
