@@ -3,3 +3,6 @@
 
 # ansible's auto-generation files
 ansible/*.retry
+
+# my test file
+ansible/test.yml

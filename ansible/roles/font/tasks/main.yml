@@ -1,11 +1,11 @@
 ---
-- name: font: confirm consolas has not been installed
+- name: confirm consolas has not been installed
   register: consolas_stat
   stat:
     path: /usr/share/fonts/truetype/consolas
 
 
-- name: font: add font consolas
+- name: add font consolas
   sudo: yes
   copy:
     mode: 0755
@@ -15,12 +15,12 @@
   notify: reload fonts
 
 
-- name: font: confirm notosans has not been installed
+- name: confirm notosans has not been installed
   register: notosans_stat
   stat:
     path: /usr/share/fonts/truetype/notosans
 
-- name: font: add notosans
+- name: add notosans
   sudo: yes
   copy:
     mode: 0755
