@@ -1,0 +1,7 @@
+---
+# Following packages are needed to install nvm.
+#   - build-essential
+#   - libssl-dev
+#   - git
+dependencies:
+  - { role: apt-essential-package }
