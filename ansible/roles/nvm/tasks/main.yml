@@ -5,3 +5,16 @@
     repo: https://github.com/creationix/nvm.git
     version: v0.33.1
     dest: ~/.nvm
+
+- name: Add nvm setup to ~/.profile
+  sudo: no
+  lineinfile:
+    dest: ~/.profile
+    regexp: '{{ item.regexp }}'
+    line: '{{ item.line }}'
+    state: present
+
+  with_items:
+    - { regexp: '^# nvm setup', line: '# nvm setup' }
+    - { regexp: '^export NVM_DIR', line: 'export NVM_DIR="$HOME/.nvm"' }
+    - { regexp: '^\[ -s "\$NVM_DIR', line: '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' }
