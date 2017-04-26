@@ -2,6 +2,7 @@
 # tasks to install essential apt packages
 #
 # - build-essential: a package which contains references to numerous packages needed for building software in general
+# - libssl-dev: a package for SSL development
 # - gdebi: package installer for `.deb`
 # - vim: default vi may be old, so install latest vim
 # - git: sourcecode version control
@@ -16,6 +17,7 @@
     update_cache: yes
   with_items:
     - build-essential
+    - libssl-dev
     - gdebi
     - vim
     - git

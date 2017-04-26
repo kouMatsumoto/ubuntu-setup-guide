@@ -148,6 +148,14 @@ $ sudo apt install build-essential
 ```
 
 
+### libssl-dev
+`libssl-dev` is a essential package for SSL development.
+
+```
+$ sudo apt install libssl-dev
+```
+
+
 ### gdevi
 
 ```
