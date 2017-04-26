@@ -140,6 +140,14 @@ $ sudo ufw logging on
 These are essential packages of `apt` for your Ubuntu.
 
 
+### build-essential
+`build-essential` is a package which contains references to numerous packages needed for building software in general.
+
+```
+$ sudo apt install build-essential
+```
+
+
 ### gdevi
 
 ```
