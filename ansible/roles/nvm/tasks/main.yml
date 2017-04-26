@@ -19,6 +19,10 @@
     - { regexp: '^export NVM_DIR', line: 'export NVM_DIR="$HOME/.nvm"' }
     - { regexp: '^\[ -s "\$NVM_DIR', line: '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' }
 
+- name: Source nvm to use
+  sudo: no
+  command: 'bash -lc "source ~/.profile"'
+
 - name: Install latest Node.js by using nvm
   sudo: no
   command: 'bash -lc "nvm install node"'
