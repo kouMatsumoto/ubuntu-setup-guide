@@ -1,5 +1,17 @@
 ---
-- name: add rule to allow access from subnet
+- name: add rule to allow access from subnet (class A)
+  sudo: yes
+  ufw:
+    rule: allow
+    src: 10.0.0.0/8
+
+- name: add rule to allow access from subnet (class B)
+  sudo: yes
+  ufw:
+    rule: allow
+    src: 172.16.0.0/12
+
+- name: add rule to allow access from subnet (class C)
   sudo: yes
   ufw:
     rule: allow

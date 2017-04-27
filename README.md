@@ -120,6 +120,8 @@ $ sudo ufw default deny routed
 We need allow access from other devises of sub-network to develop web.
 
 ```bash
+$ sudo ufw allow from 10.0.0.0/8
+$ sudo ufw allow from 172.16.0.0/12
 $ sudo ufw allow from 192.168.0.0/16
 ```
 
