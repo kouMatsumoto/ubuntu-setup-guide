@@ -17,6 +17,7 @@
   with_items:
     - { regexp: '^# rbenv setup', line: '# rbenv setup' }
     - { regexp: '^export PATH="\$HOME/\.rbenv', line: 'export PATH="$HOME/.rbenv/bin:$PATH"' }
+    - { regexp: '^eval "\$\(rbenv init', line: 'eval "$(rbenv init -)"' }
 
 - name: Source .profile
   sudo: no

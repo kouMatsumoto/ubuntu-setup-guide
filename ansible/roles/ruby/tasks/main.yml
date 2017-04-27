@@ -1,0 +1,12 @@
+---
+- name: Install ruby 2.4.1
+  sudo: no
+  command: 'bash -lc "rbenv install 2.4.1"'
+
+- name: Use ruby 2.4.1 as local
+  sudo: no
+  command: 'bash -lc "rbenv local 2.4.1"'
+
+- name: Use ruby 2.4.1 as global
+  sudo: no
+  command: 'bash -lc "rbenv global 2.4.1"'
