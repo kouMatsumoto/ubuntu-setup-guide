@@ -21,3 +21,12 @@
 - name: Source .profile
   sudo: no
   command: 'bash -lc "source ~/.profile"'
+
+
+# To enable rbenv install command
+- name: Install ruby-build
+  sudo: no
+  git:
+    repo: https://github.com/rbenv/ruby-build.git
+    version: master
+    dest: ~/.rbenv/plugins/ruby-build
