@@ -158,6 +158,13 @@ $ sudo apt install build-essential
 $ sudo apt install libssl-dev
 ```
 
+### libreadline-dev
+This is prerequisite package for installing ruby v 2.4.1
+
+```
+$ sudo apt install libreadline-dev
+```
+
 
 ### gdevi
 

@@ -3,6 +3,7 @@
 #
 # - build-essential: a package which contains references to numerous packages needed for building software in general
 # - libssl-dev: a package for SSL development
+# - libreadline-dev: prerequisite package for installing ruby v 2.4.1
 # - gdebi: package installer for `.deb`
 # - vim: default vi may be old, so install latest vim
 # - git: sourcecode version control
@@ -18,6 +19,7 @@
   with_items:
     - build-essential
     - libssl-dev
+    - libreadline-dev
     - gdebi
     - vim
     - git
