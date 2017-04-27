@@ -45,6 +45,7 @@
   1. [WebStorm](#webstorm)
   1. [Visual Studio Code](#visual-studio-code)
 - [Other utilities](#other-utilities)
+  1. [nmap](#nmap)
 
 
 
