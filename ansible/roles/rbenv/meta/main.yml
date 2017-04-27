@@ -1,0 +1,5 @@
+---
+# Following packages are needed to install rbenv.
+#   - git
+dependencies:
+  - { role: apt-essential-package }

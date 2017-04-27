@@ -1,0 +1,23 @@
+---
+- name: Install rbenv
+  sudo: no
+  git:
+    repo: https://github.com/rbenv/rbenv.git
+    version: master
+    dest: ~/.rbenv
+
+- name: Add rbenv setup to ~/.profile
+  sudo: no
+  lineinfile:
+    dest: ~/.profile
+    regexp: '{{ item.regexp }}'
+    line: '{{ item.line }}'
+    state: present
+
+  with_items:
+    - { regexp: '^# rbenv setup', line: '# rbenv setup' }
+    - { regexp: '^export PATH="\$HOME/\.rbenv', line: 'export PATH="$HOME/.rbenv/bin:$PATH"' }
+
+- name: Source .profile
+  sudo: no
+  command: 'bash -lc "source ~/.profile"'
