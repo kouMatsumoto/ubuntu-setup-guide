@@ -1,7 +1,13 @@
 ---
-- name: Install ruby 2.4.1
+- name: Confirm ruby 2.4.1 is installed
+  sudo: no
+  command: 'bash -lc "rbenv versions | grep 2\.4\.1 | cat"'
+  register: rbenv_version
+
+- name: Install ruby 2.4.1 when not installed
   sudo: no
   command: 'bash -lc "rbenv install 2.4.1"'
+  when: rbenv_version.stdout == ''
 
 - name: Use ruby 2.4.1 as local
   sudo: no
