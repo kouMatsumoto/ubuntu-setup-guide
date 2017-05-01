@@ -38,7 +38,7 @@
   1. [Node.js](#nodejs)
   1. [PHP](#php)
   1. [Ruby](#ruby)
-  1. [MySQL](#mysql)
+  1. [MariaDB](#mariadb)
   1. [MongoDB](#mongodb)
   1. [Redis](#redis)
 - [IDE and Editors](#ide-and-editors)
@@ -481,11 +481,29 @@ see https://redis.io/download
 see https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
 
 
-### MySQL
 
-Rails and MySQL
-see https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04
+### MariaDB
 
+1. Install server and cli-client.
+
+```bash
+$ sudo apt install mariadb-server mariadb-client
+```
+
+2. Configure auto start
+
+```bash
+$ sudo systemctl start mysql
+$ sudo systemctl enable mysql
+```
+
+3. Create user
+
+```bash
+$ sudo mysql -u root
+
+MariaDB [(none)]> CREATE USER local@localhost IDENTIFIED BY 'your-password' 
+```
 
 
 #Other utilities

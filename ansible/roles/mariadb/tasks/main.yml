@@ -1,0 +1,27 @@
+---
+- name: Install MariaDB
+  sudo: yes
+  apt:
+    name: '{{ item }}'
+    state: latest
+    update_cache: yes
+  with_items:
+    - mariadb-server
+    - mariadb-client
+
+
+# need to execute `mysql_user` command
+- name: Install the python mysqldb module
+  sudo: yes
+  apt:
+    name: python-mysqldb
+    state: latest
+
+
+- name: Create local user
+  sudo: yes
+  mysql_user:
+    name: local
+    password: ''
+    host: localhost
+    state: present
