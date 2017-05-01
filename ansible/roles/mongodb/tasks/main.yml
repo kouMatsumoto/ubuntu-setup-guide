@@ -1,0 +1,35 @@
+---
+- name: Add apt-key of the MongoDB Repository
+  sudo: yes
+  command: 'apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927'
+
+- name: Add apt list file of the MongoDB Repository
+  sudo: yes
+  lineinfile:
+    path: /etc/apt/sources.list.d/mongodb-org-3.2.list
+    create: yes
+    state: present
+    line: 'deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse'
+    regexp: 'deb http://repo.mongodb.org/apt/ubuntu'
+
+- name: Install mongodb-org
+  sudo: yes
+  apt:
+    name: mongodb-org
+    update_cache: yes
+    state: latest
+
+- name: Add file of service setting
+  sudo: yes
+  copy:
+    owner: root
+    group: root
+    mode: 0644
+    src: files/mongodb.service
+    dest: /etc/systemd/system/mongodb.service
+
+- name: Enable and start mongodb service
+  systemd:
+    name: mongodb
+    state: started
+    enabled: yes
