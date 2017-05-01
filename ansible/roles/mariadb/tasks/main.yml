@@ -25,3 +25,9 @@
     password: ''
     host: localhost
     state: present
+
+- name: Enable and start mysql service
+  systemd:
+    name: mysql
+    state: started
+    enabled: yes
