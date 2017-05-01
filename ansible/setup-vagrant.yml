@@ -4,6 +4,8 @@
   roles:
     - timezone
     - locale
-    - input-method
-    - apt-essential-package
+    - ufw
     - font
+    - apt-essential-package
+    - node.js
+    - ruby
