@@ -6,10 +6,10 @@
     version: master
     dest: ~/.rbenv
 
-- name: Add rbenv setup to ~/.profile
+- name: Add rbenv setup to ~/.bashrc
   sudo: no
   lineinfile:
-    dest: ~/.profile
+    dest: ~/.bashrc
     regexp: '{{ item.regexp }}'
     line: '{{ item.line }}'
     state: present
@@ -19,9 +19,9 @@
     - { regexp: '^export PATH="\$HOME/\.rbenv', line: 'export PATH="$HOME/.rbenv/bin:$PATH"' }
     - { regexp: '^eval "\$\(rbenv init', line: 'eval "$(rbenv init -)"' }
 
-- name: Source .profile
+- name: Source .bashrc
   sudo: no
-  command: 'bash -lc "source ~/.profile"'
+  command: 'bash -lc "source ~/.bashrc"'
 
 
 # To enable rbenv install command
