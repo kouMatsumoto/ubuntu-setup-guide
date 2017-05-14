@@ -46,7 +46,7 @@
   1. [Visual Studio Code](#visual-studio-code)
 - [Other utilities](#other-utilities)
   1. [nmap](#nmap)
-
+  1. [Android Studio](#android-studio)
 
 
 
@@ -595,3 +595,11 @@ Install Slack Application for Ubuntu from [slack.com](https://slack.com/download
 
 ### Google Chrome
 https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xenial-xerus-linux
+
+
+
+# Other Utilities
+
+### Android Studio
+
+See official installation [https://developer.android.com/studio/install.html](https://developer.android.com/studio/install.html)
