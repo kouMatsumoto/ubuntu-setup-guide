@@ -44,6 +44,9 @@
 - [IDE and Editors](#ide-and-editors)
   1. [WebStorm](#webstorm)
   1. [Visual Studio Code](#visual-studio-code)
+- [Communication Tools](#communication-tools)
+  1. [Slack](#slack)
+  1. [Skype](#skype)
 - [Other utilities](#other-utilities)
   1. [nmap](#nmap)
   1. [Android Studio](#android-studio)
@@ -590,15 +593,22 @@ https://github.com/chef/bento/issues/682
 
 
 
-### slack
+
+
+# Communication tools
+
+### Slack
 Install Slack Application for Ubuntu from [slack.com](https://slack.com/downloads/linux)
 
-### Google Chrome
-https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xenial-xerus-linux
+### Skype
 
 
 
 # Other Utilities
+
+### Google Chrome
+https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xenial-xerus-linux
+
 
 ### Android Studio
 
