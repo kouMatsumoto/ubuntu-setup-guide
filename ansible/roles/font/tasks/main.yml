@@ -1,9 +1,9 @@
 ---
 - name: confirm consolas has not been installed
-  register: consolas_stat
   stat:
     path: /usr/share/fonts/truetype/consolas
-
+  register: f
+  tags: font
 
 - name: add font consolas
   sudo: yes
@@ -11,14 +11,15 @@
     mode: 0755
     src: ./font_data/consolas
     dest: /usr/share/fonts/truetype/
-  when: consolas_stat.stat.exists == false
+  when: f.stat.exists == false
   notify: reload fonts
-
+  tags: font
 
 - name: confirm notosans has not been installed
-  register: notosans_stat
   stat:
     path: /usr/share/fonts/truetype/notosans
+  register: f
+  tags: font
 
 - name: add notosans
   sudo: yes
@@ -26,5 +27,6 @@
     mode: 0755
     src: ./font_data/notosans
     dest: /usr/share/fonts/truetype/
-  when: notosans_stat.stat.exists == false
+  when: f.stat.exists == false
   notify: reload fonts
+  tags: font
