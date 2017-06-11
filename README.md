@@ -385,6 +385,7 @@ After installing, set global configs
 ```
 $ git config --global user.name "my name"
 $ git config --global user.email myemail@example.com
+$ git config --global core.editor vim
 ```
 
 #### Create ssh-key and register to GitHub
