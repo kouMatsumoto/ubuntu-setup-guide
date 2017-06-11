@@ -6,3 +6,7 @@ ansible/*.retry
 
 # my test file
 ansible/test.yml
+
+# ansible's private files
+ansible/vars/*
+!ansible/vars/sample.yml

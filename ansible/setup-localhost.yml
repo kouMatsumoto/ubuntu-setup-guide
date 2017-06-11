@@ -1,0 +1,12 @@
+---
+- hosts: local
+  remote_user: '{{ user_name }}'
+  connection: local
+  vars_files:
+      - ./vars/localhost.yml
+  roles:
+    - timezone
+    - locale
+    - ufw
+    - font
+    - apt-essential-package
