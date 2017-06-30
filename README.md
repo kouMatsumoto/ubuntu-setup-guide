@@ -358,10 +358,12 @@ Install useful plugins below.
 
 - .ignore
 - AceJump
+- BashSupport
+- camelCase
 - gfm
 - Git Flow Integration
 - Markdown Support
-- BashSupport
+- Material Theme UI
 - YAML/Ansible support
 
 #### Change Ubuntu system shortcuts
