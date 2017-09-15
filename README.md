@@ -57,7 +57,7 @@
 First of all, we must update all apt packages installed.
 
 ```
-$ sudo apt-get update
+$ sudo apt update
 ```
 
 
@@ -172,7 +172,7 @@ $ sudo apt install libreadline-dev
 ### gdevi
 
 ```
-$ sudo apt-get install gdebi
+$ sudo apt install gdebi
 ```
 
 ### git
@@ -199,7 +199,7 @@ A utility command-line tool for clipboard copy and paste.
 This will be used to copy ssh-key to clipboard.
 
 ```
-$ sudo apt-get install xsel
+$ sudo apt install xsel
 ```
 
 ### cabextract
@@ -207,7 +207,7 @@ $ sudo apt-get install xsel
 It's need to install fonts of Microsoft such as `Consolas` which is essential font of my-programming.
 
 ```
-$ sudo apt-get install cabextract
+$ sudo apt install cabextract
 ```
 
 ### font-manager
@@ -238,8 +238,8 @@ Install manually by following my procedure, or automatically by using ansible.
 - `cabextract` is software to extract Microsoft cabinet files also called `.cab`.
 
 ```
-$ sudo apt-get install font-manager
-$ sudo apt-get install cabextract
+$ sudo apt install font-manager
+$ sudo apt install cabextract
 ```
 
 2. Create `consoles.sh` file to download font data and make it installable.
@@ -313,7 +313,7 @@ See [this post](https://hirooka.pro/?p=8373).
 Install fcitx-mozc
 
 ```
-$ sudo apt-get install fcitx-mozc
+$ sudo apt install fcitx-mozc
 ```
 
 Change Language Support settings.
@@ -375,10 +375,10 @@ Download from [code.visualstudio.com](https://code.visualstudio.com/) and Instal
 
 
 ### Git
-Install with apt-get
+Install with apt
 
 ```
-$ sudo apt-get install git
+$ sudo apt install git
 ```
 
 #### Set global configs
@@ -414,7 +414,7 @@ Now, register key to github.com.
 Copy id_rsa.pub to clipboard.
 
 ```
-$ xsel --clipboard < id_rsa.pub
+$ xsel -b < id_rsa.pub
 ```
 
 Register this on [https://github.com/settings/ssh](https://github.com/settings/ssh).
@@ -426,10 +426,10 @@ $ ssh -T git@github.com
 ```
 
 #### Git flow
-Install with apt-get.
+Install with apt.
 
 ```
-$ sudo apt-get install git-flow
+$ sudo apt install git-flow
 ```
 
 #### Git quick-state
@@ -445,7 +445,7 @@ See installation [github.com/nvm](https://github.com/creationix/nvm)
 First, make sure the ```build-essential``` and ```libssl-dev``` packages work.
 
 ```
-$ sudo apt-get install build-essential libssl-dev
+$ sudo apt install build-essential libssl-dev
 ```
 
 Next, install script using cURL  
@@ -518,10 +518,10 @@ MariaDB [(none)]> CREATE USER local@localhost IDENTIFIED BY 'your-password'
 See installation [http://docs.ansible.com/ansible/intro_installation.html](http://docs.ansible.com/ansible/intro_installation.html)
 
 ```
-$ sudo apt-get install software-properties-common
+$ sudo apt install software-properties-common
 $ sudo apt-add-repository ppa:ansible/ansible
-$ sudo apt-get update
-$ sudo apt-get install ansible
+$ sudo apt update
+$ sudo apt install ansible
 ```
 
 ### Vagrant and VirtualBox
@@ -535,10 +535,10 @@ To use VirtualBox, It need to be disabled UEFI Secure Boot.
 First of all, set UEFI Secure Boot disabled.
 
 #### Install VirtualBox
-After setting to disable UEFI Secure Boot, Install VirtualBox with `apt-get`.
+After setting to disable UEFI Secure Boot, Install VirtualBox with `apt`.
 
 ```
-$ sudo apt-get install virtualbox
+$ sudo apt install virtualbox
 ```
 
 Make sure you can use virtualbox with no errors.
@@ -551,7 +551,7 @@ $ virtualbox --help
 After installing VirtualBox, Install vagrant too.
 
 ```
-$ sudo apt-get install vagrant
+$ sudo apt install vagrant
 ```
 
 Make sure you can use vagrant.
