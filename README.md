@@ -50,8 +50,8 @@
 - [Other utilities](#other-utilities)
   1. [nmap](#nmap)
   1. [Android Studio](#android-studio)
-
-
+- [Handy Shell-Script](#handy-shell-script)
+  1. [About Git](#about-git)
 
 # Update apt packages
 First of all, we must update all apt packages installed.
@@ -616,3 +616,17 @@ https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xen
 ### Android Studio
 
 See official installation [https://developer.android.com/studio/install.html](https://developer.android.com/studio/install.html)
+
+
+# Handy Shell-Script
+
+### About Git
+#### Git Config Command Set
+
+```
+setgitconfig () {
+  git config --local user.name YOUR_NAME
+  git config --local user.email YOUR_EMAIL
+  git config --local user.signingkey YOUR_KEY
+}
+```
