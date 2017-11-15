@@ -181,6 +181,19 @@ $ sudo apt install gdebi
 $ sudo apt install git
 ```
 
+#### Set Git Config For GPG
+```
+user.name=YOUR_NAME
+user.email=YOUR_EMAIL
+user.signingkey=YOUR_KEY
+core.editor=vim
+core.autocrlf=input
+gpg.program=gpg2
+commit.gpgsign=true
+tag.gpgsign=true
+```
+
+
 ### vim
 Default vi may be old. Install newest vim with apt.
 
