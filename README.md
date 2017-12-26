@@ -184,15 +184,24 @@ $ sudo apt install git
 ```
 
 #### Set Git Config For GPG
+```bash
+$ git config --global user.name YOUR_NAME
+$ git config --global user.email YOUR_EMAIL
+$ git config --global core.editor vim
+$ git config --global core.autocrlf input
+$ git config --global gpg.program gpg2
+$ git config --global commit.gpgsign true
+$ git config --global tag.gpgsign true
 ```
-user.name=YOUR_NAME
-user.email=YOUR_EMAIL
-user.signingkey=YOUR_KEY
-core.editor=vim
-core.autocrlf=input
-gpg.program=gpg2
-commit.gpgsign=true
-tag.gpgsign=true
+
+#### handy shell-script
+
+```
+setgitconfig () {
+  git config --local user.name YOUR_NAME
+  git config --local user.email YOUR_EMAIL
+  git config --local user.signingkey YOUR_KEY
+}
 ```
 
 
@@ -631,17 +640,3 @@ https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xen
 ### Android Studio
 
 See official installation [https://developer.android.com/studio/install.html](https://developer.android.com/studio/install.html)
-
-
-# Handy Shell-Script
-
-### About Git
-#### Git Config Command Set
-
-```
-setgitconfig () {
-  git config --local user.name YOUR_NAME
-  git config --local user.email YOUR_EMAIL
-  git config --local user.signingkey YOUR_KEY
-}
-```
