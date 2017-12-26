@@ -58,6 +58,8 @@ First of all, we must update all apt packages installed.
 
 ```
 $ sudo apt update
+$ sudo apt upgrade
+$ sudo apt dist-upgrade
 ```
 
 
