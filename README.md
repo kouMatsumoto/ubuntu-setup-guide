@@ -177,6 +177,12 @@ $ sudo apt install libreadline-dev
 $ sudo apt install gdebi
 ```
 
+### curl
+
+```
+$ sudo apt install curl
+```
+
 ### git
 
 ```
