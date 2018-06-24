@@ -110,20 +110,12 @@ Update Language settings.
 2. Select "Region & Language" in right menu.
 3. Select "Manage Installed Languages".
 4. Change "Keyboard input method system" to "fcitx".
-
-```
-
-
-Change "Keyboard input method system" to "fcitx"
-Logout Ubuntu
-Login Ubuntu
-Open "Application" - "Fcitx Configuration"
-Select "input Method" tab
-Add "mozc(Japanese)" (Disable "Only show Current Language" check)
-Select "Global Config" - "Hotkey"
-Set "Trigger Input Method" to [Super]+[Space]
-Confirm you can use Japanese input method with [Super]+[Space] toggle
-```
+5. Logout.
+6. Login.
+7. Open "Fcitx Configuration" application.
+8. Add a new input method "Mozc" (need to disable checkbox "Only show Current Language").
+9. Move to "Global Config" tab.
+10. Change a hotkey for "Trigger Input Method" to [Super+Space].
 
 
 After enabled fcitx, change shortcut for "Fcitx Clipboard access".  
