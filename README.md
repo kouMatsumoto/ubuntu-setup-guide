@@ -17,6 +17,7 @@
 ## Table of contents
 - [Update apt packages](#update-apt-packages)
 - [SSH and GPG](#ssh-and-gpg)
+- [Git](#git)
 - [Input Method](#input-method)
   1. [Enable Japanese](#enable-japanese)
 - [Install Ansible](#install-ansible)
@@ -26,7 +27,6 @@
   1. [Firewall](#firewall)
 - [Essential packages](#essential-packages)
   1. [gdevi](#gdevi)
-  1. [git](#git)
   1. [vim](#vim)
   1. [xsel](#xsel)
   1. [cabextract](#cabextract)
@@ -69,6 +69,7 @@ $ sudo apt dist-upgrade
 
 
 # SSH and GPG
+
 Second, restore ssh and gpg keys from backup.
 
 *ssh*
@@ -84,6 +85,40 @@ $ gpg2 --import "backup-file-name"
 # type passwords.
 $ gpg2 -k
 ```
+
+**[Back to top](#table-of-contents)**
+
+
+
+# Install Git
+Install git and set up its config.
+
+*install*
+```bash
+$ sudo apt install git
+```
+
+*configure*
+```bash
+$ git config --global user.name YOUR_NAME
+$ git config --global user.email YOUR_EMAIL
+$ git config --global core.editor vim
+$ git config --global core.autocrlf input
+$ git config --global gpg.program gpg2
+$ git config --global commit.gpgsign true
+$ git config --global tag.gpgsign true
+```
+
+*optional handy script*
+```bash
+setgitconfig () {
+  git config --local user.name YOUR_NAME
+  git config --local user.email YOUR_EMAIL
+  git config --local user.signingkey YOUR_KEY
+}
+```
+
+
 
 **[Back to top](#table-of-contents)**
 
@@ -240,34 +275,6 @@ $ sudo apt install gdebi
 ```
 $ sudo apt install curl
 ```
-
-### git
-
-```
-$ sudo apt install git
-```
-
-#### Set Git Config For GPG
-```bash
-$ git config --global user.name YOUR_NAME
-$ git config --global user.email YOUR_EMAIL
-$ git config --global core.editor vim
-$ git config --global core.autocrlf input
-$ git config --global gpg.program gpg2
-$ git config --global commit.gpgsign true
-$ git config --global tag.gpgsign true
-```
-
-#### handy shell-script
-
-```
-setgitconfig () {
-  git config --local user.name YOUR_NAME
-  git config --local user.email YOUR_EMAIL
-  git config --local user.signingkey YOUR_KEY
-}
-```
-
 
 ### vim
 Default vi may be old. Install newest vim with apt.
