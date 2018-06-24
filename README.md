@@ -16,6 +16,7 @@
 
 ## Table of contents
 - [Update apt packages](#update-apt-packages)
+- [SSH and GPG](#ssh-and-gpg)
 - [Install Ansible](#install-ansible)
 - [System Settings](#system-settings)
   1. [TimeZone](#timezone)
@@ -66,7 +67,24 @@ $ sudo apt dist-upgrade
 **[Back to top](#table-of-contents)**
 
 
+# SSH and GPG
+Second, restore ssh and gpg keys from backup.
 
+*ssh*
+```
+# copy the `id_rsa` file into `.ssh` directory.
+$ ssh -T git@github.com
+```
+
+*gpg*
+```
+$ sudo apt install gnupg2
+$ gpg2 --import "backup-file-name"
+# type passwords.
+$ gpg2 -k
+```
+
+**[Back to top](#table-of-contents)**
 
 
 # Install Ansible
