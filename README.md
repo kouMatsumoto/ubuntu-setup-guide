@@ -17,6 +17,8 @@
 ## Table of contents
 - [Update apt packages](#update-apt-packages)
 - [SSH and GPG](#ssh-and-gpg)
+- [Input Method](#input-method)
+  1. [Enable Japanese](#enable-japanese)
 - [Install Ansible](#install-ansible)
 - [System Settings](#system-settings)
   1. [TimeZone](#timezone)
@@ -32,8 +34,6 @@
 - [Fonts](#fonts)
   1. [Consolas](#consolas)
   1. [NotoSans](#notosans)
-- [Input Method](#input-method)
-  1. [Enable Japanese](#enable-japanese)
 - [Software to web development](#software-to-web-development)
   1. [Git](#git)
   1. [Node.js](#nodejs)
@@ -67,6 +67,7 @@ $ sudo apt dist-upgrade
 **[Back to top](#table-of-contents)**
 
 
+
 # SSH and GPG
 Second, restore ssh and gpg keys from backup.
 
@@ -85,6 +86,53 @@ $ gpg2 -k
 ```
 
 **[Back to top](#table-of-contents)**
+
+
+
+# Input Method
+
+### Enable Japanese
+> refer to http://gihyo.jp/admin/serial/01/ubuntu-recipe/0417
+
+
+Use fcitx and Mozc to input Japanese.
+See [this post](https://hirooka.pro/?p=8373).
+
+Install fcitx-mozc
+
+```
+$ sudo apt install fcitx-mozc
+```
+
+Update Language settings.
+
+1. Open "System Settings"
+2. Select "Region & Language" in right menu.
+3. Select "Manage Installed Languages".
+4. Change "Keyboard input method system" to "fcitx".
+
+```
+
+
+Change "Keyboard input method system" to "fcitx"
+Logout Ubuntu
+Login Ubuntu
+Open "Application" - "Fcitx Configuration"
+Select "input Method" tab
+Add "mozc(Japanese)" (Disable "Only show Current Language" check)
+Select "Global Config" - "Hotkey"
+Set "Trigger Input Method" to [Super]+[Space]
+Confirm you can use Japanese input method with [Super]+[Space] toggle
+```
+
+
+After enabled fcitx, change shortcut for "Fcitx Clipboard access".  
+`fxitx Input Method Configuration > Addon > Clipboard`  
+As default, this will conflict with WebStorm AceJump shortcut.
+
+
+**[Back to top](#table-of-contents)**
+
 
 
 # Install Ansible
@@ -344,50 +392,6 @@ $ rm -rf NotoSans-hinted.zip NotoSans-hinted
 
 
 **[Back to top](#table-of-contents)**
-
-
-
-
-
-# Input Method
-
-### Enable Japanese
-> refer to http://gihyo.jp/admin/serial/01/ubuntu-recipe/0417
-
-
-Use fcitx and Mozc to input Japanese.
-See [this post](https://hirooka.pro/?p=8373).
-
-Install fcitx-mozc
-
-```
-$ sudo apt install fcitx-mozc
-```
-
-Change Language Support settings.
-
-```
-Open "System Settings" - "Language Support"
-Change "Keyboard input method system" to "fcitx"
-Logout Ubuntu
-Login Ubuntu
-Open "Application" - "Fcitx Configuration"
-Select "input Method" tab
-Add "mozc(Japanese)" (Disable "Only show Current Language" check)
-Select "Global Config" - "Hotkey"
-Set "Trigger Input Method" to [Super]+[Space]
-Confirm you can use Japanese input method with [Super]+[Space] toggle
-```
-
-
-After enabled fcitx, change shortcut for "Fcitx Clipboard access".  
-`fxitx Input Method Configuration > Addon > Clipboard`  
-As default, this will conflict with WebStorm AceJump shortcut.
-
-
-**[Back to top](#table-of-contents)**
-
-
 
 
 
